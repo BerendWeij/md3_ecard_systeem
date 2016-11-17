@@ -1,0 +1,39 @@
+body {
+    @include defaultFont();
+}
+
+
+h1 {
+    @include headerFont(50);
+}
+h2 {
+    @include headerFont(36);
+}
+h3 {
+    @include headerFont(24);
+}
+h4 {
+    @include headerFont(16);
+}
+h5 {
+    @include headerFont(14);
+}
+h6 {
+    @include headerFont(12);
+}
+
+p, a, li {
+    @include defaultFont(11);
+}
+
+p {
+    line-height:1.8em;
+}
+
+a {
+    font-size:inherit;
+    &:focus, &:active {
+        outline:none;
+        -moz-outline-style:none;
+    }
+}
