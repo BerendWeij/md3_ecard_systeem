@@ -6,10 +6,13 @@ var email = require('../controller/email.controller.js');
 /*
 Creating new ecard
 */
-router.get('/',
+
+router.param('currentEcardID', ecard.Get)
+router.post('/',
     ecard.Create,
     email.send
 );
+router.post('/:currentEcardID', ecard.Get1);
 
 module.exports = router;
 

@@ -2,6 +2,7 @@
  * Created by Artur on 11/18/2016.
  */
 var mongoose = require('mongoose');
+var config = require('../config');
 var Schema = mongoose.Schema;
 
 var  objectSchema = new Schema({
@@ -11,11 +12,13 @@ var  objectSchema = new Schema({
     },
     x: {
         type: Number,
-        require: true
+        require: true,
+        max: config.canvas.maxWidth
     },
     y: {
         type: Number,
-        require: true
+        require: true,
+        max: config.canvas.maxHeight
     },
     z: {
         type: Number,

@@ -8,7 +8,7 @@ exports.Create = function(req,res, next) {
     var ecard = new ecardModel({
         creatorName: req.body.creatorName,
         receiverName: req.body.receiverName,
-            email: req.body.email,
+        email: req.body.email,
         objects: [
             {
                 id: 'Image',
@@ -27,4 +27,10 @@ exports.Create = function(req,res, next) {
             next();
         }
     })
+};
+exports.Get = function (req, res,next, ecard_id) {
+    
+};
+exports.Get1 = function (req, res) {
+
 };

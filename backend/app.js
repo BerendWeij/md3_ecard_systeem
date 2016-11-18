@@ -6,9 +6,8 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var ecard = require('./routes/ecard.route.js');
-
+var config = require('./config');
 var app = express();
-
 mongoose.connect('localhost:27017/ecard');
 
 
