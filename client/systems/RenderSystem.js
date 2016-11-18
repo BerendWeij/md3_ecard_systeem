@@ -1,3 +1,16 @@
+var cssId = 'myCss';  // you could encode the css path itself to generate id..
+if (!document.getElementById(cssId))
+{
+    var head  = document.getElementsByTagName('head')[0];
+    var link  = document.createElement('link');
+    link.id   = cssId;
+    link.rel  = 'stylesheet';
+    link.type = 'text/css';
+    link.href = '../css/main.css';
+    link.media = 'all';
+    head.appendChild(link);
+}
+
 export default class RenderSystem {
 
     // <div style="width:100px;height:100px;background:red;position:absolute;transform: perspective(500px) translate3d(10px,0px,-200px);z-index:-200;"></div>
@@ -42,10 +55,10 @@ export default class RenderSystem {
                 z = currentEntity.entity.z;
 
             // todo: refactor: alleen de positie aanpassen. Hoe hij eruit ziet moet naar SASS
-            currentEntity.element.style = `width:100px;height:100px;background:red;position:absolute;transform:perspective(500px) translate3d(${x}px,${y}px,${z}px);z-index:${z};`;
+            currentEntity.element.style = ` transform:perspective(500px)translate3d(${x}px,${y}px,${z}px);z-index:${z};`;
         });
     }
-
+    //width:100px;height:100px;background:red;position:absolute;
     /**
      * Get a list with all the entities
      * @returns {array} a list with all the entities

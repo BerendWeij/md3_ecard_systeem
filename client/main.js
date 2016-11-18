@@ -13,12 +13,10 @@ export default class Main {
   setup(){
     this.renderSystem = new RenderSystem();
 
-    let testEntity = new MovingEntity();
+
+    let testEntity = new MovingEntity("car");
     this.renderSystem.add( testEntity );
 
-    setInterval(()=>{
-      //testEntity.x += 5;
-    }, 50);
   }
 
 }
