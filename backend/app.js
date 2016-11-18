@@ -9,7 +9,7 @@ var ecard = require('./routes/ecard.route.js');
 
 var app = express();
 
-mongoose.connect('localhost:27017/node-angular');
+mongoose.connect('localhost:27017/ecard');
 
 
 // uncomment after placing your favicon in /public
