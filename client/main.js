@@ -1,4 +1,6 @@
 import RenderSystem from './systems/RenderSystem';
+import Entity from './entities/Entity';
+import MovingEntity from './entities/MovingEntity';
 
 export default class Main {
 
@@ -11,15 +13,11 @@ export default class Main {
   setup(){
     this.renderSystem = new RenderSystem();
 
-
-    let test = {x:50, y:-50, z:5, id:"test"};
-    this.renderSystem.add(test);
-    this.renderSystem.add({x:15, y:-150, z:-205, id:"test"});
-    this.renderSystem.add({x:500, y:5, z:5, id:"test"});
-    this.renderSystem.add({x:5, y:-250, z:50, id:"test"});
+    let testEntity = new MovingEntity();
+    this.renderSystem.add( testEntity );
 
     setInterval(()=>{
-      test.x += 5;
+      //testEntity.x += 5;
     }, 50);
   }
 
