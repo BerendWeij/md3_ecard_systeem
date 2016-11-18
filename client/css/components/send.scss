@@ -1,0 +1,44 @@
+$color: rgba(150,150,150,0.5);
+$padding: 5px;
+
+body{
+  margin:0;
+}
+.sendMenu{
+  width: 200px;
+  height: 35px;
+  overflow: hidden;
+  padding: $padding;
+  text-align: right;
+  position: absolute;
+  bottom: 0px;
+  right: 20px;
+  transition: all 1s ease;
+  p{
+    background-color: $color;
+    padding: $padding;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+  input{
+    margin: 5px;
+    width: 190px;
+  }
+  input[type="text"],[type="email"]{
+    border: 0px;
+    border-bottom: 1px solid $color;
+  }
+  .button{
+    border: 0;
+    padding: $padding;
+    text-align: center;
+    background-color: $color;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+  &.fullHeight{
+    height: 150px;
+  }
+}
