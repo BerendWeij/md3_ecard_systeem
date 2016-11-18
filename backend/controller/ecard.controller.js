@@ -6,20 +6,24 @@ var ecardModel = require('../models/ecard.model');
 
 exports.Create = function(req,res, next) {
     var ecard = new ecardModel({
-        creatorName: 'Artur',
-        receiverName: 'Tristan',
-        email: 'arturkupczak@outlook.com',
+        creatorName: req.body.creatorName,
+        receiverName: req.body.receiverName,
+            email: req.body.email,
         objects: [
-            {   name: 'Image',
+            {
+                id: 'Image',
                 x: 11,
-                y: 100
+                y: 100,
+                z: 0,
+                rotation: 0,
+                scale: 0
+
             }
         ]
 
     });
     ecard.save(function (err, result) {
         if(!err){
-            console.log('Gelukt');
             next();
         }
     })

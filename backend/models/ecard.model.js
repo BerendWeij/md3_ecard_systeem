@@ -5,7 +5,7 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var  objectSchema = new Schema({
-    name: {
+    id: {
         type: String,
         require: true
     },
@@ -17,15 +17,17 @@ var  objectSchema = new Schema({
         type: Number,
         require: true
     },
+    z: {
+        type: Number,
+        requite: true
+    },
     rotation: {
         type: Number,
-        requite: true,
-        default: 180
+        requite: true
     },
     scale: {
         type: Number,
-        requite: true,
-        default: 1
+        requite: true
     }
 
 });
