@@ -25,11 +25,16 @@
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     
     a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        
+        
+        &:hover {
+            background-color: #f1f1f1
+        }
+    }
 }
 
 
@@ -45,3 +50,25 @@
 .dropdown:hover .dropbtn {
     background-color: #3e8e41;
 }
+
+/*
+<!DOCTYPE html>
+<html lang=eng>
+<head>
+    <meta charset="UTF-8">
+    <title>ecard systeem</title>
+    <link rel="stylesheet" type="text/css" href="client/css/main.css">
+</head>
+<body>
+    <div class="dropdown">
+  <button class="dropbtn">objecten</button>
+  <div class="dropdown-content">
+    <a href="#">object 1</a>
+    <a href="#">object 2</a>
+    <a href="#">object 3</a>
+  </div>
+</div>
+    <div class="berend"></div>
+</body>
+</html>    
+*/
