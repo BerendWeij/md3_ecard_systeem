@@ -4,6 +4,7 @@
   "description": "Webpack",
   "main": "main.js",
   "scripts": {
+    "dev": "webpack-dev-server --colors --progress",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Jesse Vermeulen",
