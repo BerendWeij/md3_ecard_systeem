@@ -3,7 +3,7 @@ var router = express.Router();
 var ecard = require('../controller/ecard.controller');
 
 /* GET home page. */
-router.delete('/', ecard.test);
+router.get('/', ecard.test);
 
 module.exports = router;
 
