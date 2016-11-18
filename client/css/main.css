@@ -1,0 +1,84 @@
+/*
+ |
+ | HELPERS
+ | ---------------------------------------
+ | Variable declarations and functions
+ |
+ */
+/*
+ |
+ |  Global variables (probeer zoveel mogelijk varibelen per component te maken.. en niet globaal)
+ | ------------------------------------
+ */
+/*
+ |
+ | BASE
+ | ---------------------------------------
+ | Base files and some global declarations
+ |
+ */
+body {
+  font-family: Menlo, Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+  font-size: 11px;
+  line-height: 11px; }
+
+h1 {
+  font-family: 'Tahoma', Arial;
+  font-size: 50px;
+  line-height: 50px; }
+
+h2 {
+  font-family: 'Tahoma', Arial;
+  font-size: 36px;
+  line-height: 36px; }
+
+h3 {
+  font-family: 'Tahoma', Arial;
+  font-size: 24px;
+  line-height: 24px; }
+
+h4 {
+  font-family: 'Tahoma', Arial;
+  font-size: 16px;
+  line-height: 16px; }
+
+h5 {
+  font-family: 'Tahoma', Arial;
+  font-size: 14px;
+  line-height: 14px; }
+
+h6 {
+  font-family: 'Tahoma', Arial;
+  font-size: 12px;
+  line-height: 12px; }
+
+p, a, li {
+  font-family: Menlo, Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+  font-size: 11px;
+  line-height: 11px; }
+
+p {
+  line-height: 1.8em; }
+
+a {
+  font-size: inherit; }
+  a:focus, a:active {
+    outline: none;
+    -moz-outline-style: none; }
+
+/*
+ |
+ | FRAMEWORK
+ | ---------------------------------------
+ | Structure and layout
+ |
+ */
+/*
+ |
+ | COMPONENTS
+ | ---------------------------------------
+ | Specific components
+ |
+ */
+
+/*# sourceMappingURL=main.css.map */
