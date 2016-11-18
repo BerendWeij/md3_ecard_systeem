@@ -5,7 +5,7 @@ export default class Car extends MovingEntity {
 	constructor(){
         super();
 
-        this.id = "Car";
+        this.id = "car";
 
         this.velocity.x = 5;
     }
