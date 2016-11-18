@@ -4,7 +4,7 @@
 var ecardModel = require('../models/ecard.model');
 
 
-exports.test = function(req,res) {
+exports.Create = function(req,res, next) {
     var ecard = new ecardModel({
         creatorName: 'Artur',
         receiverName: 'Tristan',
@@ -18,6 +18,9 @@ exports.test = function(req,res) {
 
     });
     ecard.save(function (err, result) {
-        res.send(JSON.stringify(result));
+        if(!err){
+            console.log('Gelukt');
+            next();
+        }
     })
 };
