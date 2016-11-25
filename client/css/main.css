@@ -147,33 +147,50 @@ body {
 
 .sendMenu {
   width: 200px;
-  height: 35px;
+  height: 29px;
+  background-color: rgba(180, 180, 180, 0.5);
   overflow: hidden;
-  padding: 5px;
-  text-align: right;
   position: absolute;
   bottom: 0px;
   right: 20px;
   transition: all 1s ease; }
   .sendMenu p {
-    background-color: rgba(150, 150, 150, 0.5);
-    padding: 5px; }
+    text-decoration: underline;
+    background-color: rgba(180, 180, 180, 0.5);
+    text-align: center;
+    padding: 5px;
+    margin: 0; }
     .sendMenu p:hover {
       cursor: pointer; }
   .sendMenu input {
     margin: 5px;
-    width: 190px; }
-  .sendMenu input[type="text"], .sendMenu [type="email"] {
+    width: 190px;
     border: 0px;
-    border-bottom: 1px solid rgba(150, 150, 150, 0.5); }
+    background-color: #ddd;
+    border-bottom: 1px solid #888; }
   .sendMenu .button {
     border: 0;
     padding: 5px;
     text-align: center;
-    background-color: rgba(150, 150, 150, 0.5); }
+    text-decoration: underline; }
     .sendMenu .button:hover {
-      cursor: pointer; }
+      cursor: pointer;
+      background-color: rgba(180, 180, 180, 0.5); }
   .sendMenu.fullHeight {
-    height: 150px; }
+    height: 134px; }
+
+::-webkit-input-placeholder {
+  color: #555; }
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #555; }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #555; }
+
+:-ms-input-placeholder {
+  color: #555; }
 
 /*# sourceMappingURL=main.css.map */

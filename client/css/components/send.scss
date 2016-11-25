@@ -1,4 +1,6 @@
-$color: rgba(150,150,150,0.5);
+$color: rgba(180,180,180,0.5);
+$textcolor: #555;
+$border: #888;
 $padding: 5px;
 
 body{
@@ -6,17 +8,19 @@ body{
 }
 .sendMenu{
   width: 200px;
-  height: 35px;
+  height: 29px;
+  background-color: $color;
   overflow: hidden;
-  padding: $padding;
-  text-align: right;
   position: absolute;
   bottom: 0px;
   right: 20px;
   transition: all 1s ease;
   p{
+    text-decoration: underline;
     background-color: $color;
+    text-align: center;
     padding: $padding;
+    margin: 0;
     &:hover{
       cursor: pointer;
     }
@@ -24,21 +28,38 @@ body{
   input{
     margin: 5px;
     width: 190px;
-  }
-  input[type="text"],[type="email"]{
     border: 0px;
-    border-bottom: 1px solid $color;
+    background-color: #ddd;
+    border-bottom: 1px solid $border;
   }
   .button{
     border: 0;
     padding: $padding;
     text-align: center;
-    background-color: $color;
+    // background-color: $color;
+    // border: 1px solid black;
+    text-decoration: underline;
     &:hover{
       cursor: pointer;
+      background-color: $color;
     }
   }
   &.fullHeight{
-    height: 150px;
+    height: 134px;
   }
+}
+::-webkit-input-placeholder {
+   color: $textcolor;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: $textcolor;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: $textcolor;
+}
+
+:-ms-input-placeholder {
+   color: $textcolor;
 }
