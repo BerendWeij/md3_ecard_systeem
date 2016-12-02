@@ -5,6 +5,7 @@ var ecardModel = require('../models/ecard.model');
 
 
 exports.Create = function(req,res, next) {
+    console.log('test');
     var ecard = new ecardModel({
         creatorName: req.body.creatorName,
         receiverName: req.body.receiverName,
@@ -22,9 +23,11 @@ exports.Create = function(req,res, next) {
 
     });
     ecard.save(function (err, result) {
-        if(!err)
-            res.status(201).json({ Type: 'Success', Message: 'New ecard created' }).end();
-        else{
+        if(!err){
+            req.ecardId = result._id;
+            next();
+            res.status(200).json({ Type: 'Success', Message: 'New ecard created' }).end();
+        } else{
             res.status(500).json({ Type: 'Error', Message: 'Error while creating' }).end();
             console.log(err);
         }

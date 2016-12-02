@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var ecard = require('../controller/ecard.controller');
-var email = require('../controller/email.controller.js');
+var email = require('../controller/email.controller');
 
 /*
 Creating new ecard
@@ -12,6 +12,8 @@ router.post('/',
     ecard.Create,
     email.send
 );
+
+
 //router.post('/:currentEcardID', ecard.Get1);
 
 module.exports = router;
