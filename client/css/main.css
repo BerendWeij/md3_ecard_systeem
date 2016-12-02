@@ -106,6 +106,8 @@ a {
     padding: 12px 16px;
     text-decoration: none;
     display: block; }
+    .dropdown-content a:hover {
+      background-color: #f1f1f1; }
 
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
@@ -118,5 +120,125 @@ a {
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
   background-color: #3e8e41; }
+
+/*
+<!DOCTYPE html>
+<html lang=eng>
+<head>
+    <meta charset="UTF-8">
+    <title>ecard systeem</title>
+    <link rel="stylesheet" type="text/css" href="client/css/main.css">
+</head>
+<body>
+    <div class="dropdown">
+  <button class="dropbtn">objecten</button>
+  <div class="dropdown-content">
+    <a href="#">object 1</a>
+    <a href="#">object 2</a>
+    <a href="#">object 3</a>
+  </div>
+</div>
+    <div class="berend"></div>
+</body>
+</html>    
+*/
+.house {
+  width: 300px;
+  height: 500px;
+  background-image: url(http://boxc.sourceforge.net/_images/house.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  margin-left: -65em; }
+
+.tree {
+  width: 300px;
+  height: 500px;
+  background-image: url(http://gallery.yopriceville.com/var/resizes/Free-Clipart-Pictures/Trees-PNG-Clipart/Large_Tree_PNG_Clipart.png?m=1382565600);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  margin-left: -50em;
+  margin-top: -10em; }
+
+.car {
+  width: 100px;
+  height: 100px;
+  background-image: url(https://openclipart.org/image/2400px/svg_to_png/228784/Blue-Beetle-Profile.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute; }
+
+.mario {
+  width: 300px;
+  height: 300px;
+  background-image: url(http://orig14.deviantart.net/1d04/f/2014/211/5/4/mario_walking_by_jesusache-d7t0gft.gif);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  margin-top: 5em; }
+
+.dog {
+  width: 100px;
+  height: 100px;
+  background-image: url("http://i1137.photobucket.com/albums/n503/wunten818/pixel_joint_forum/my_pixel_art/myDogWhip_Large_zpsae7c8c35.gif");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute; }
+
+.pikachu {
+  width: 200px;
+  height: 200px;
+  background-image: url(http://rs949.pbsrc.com/albums/ad339/FlameingElectricity/Animated%20Pokemon%20Sprites/025_zpsfea5354b.gif~c200);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  margin-left: -30em; }
+
+.sun {
+  width: 300px;
+  height: 500px;
+  background-image: url(http://vignette2.wikia.nocookie.net/clubpenguin/images/f/f7/Sun_Pin.PNG/revision/20130808182600);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute; }
+
+.bush {
+  width: 300px;
+  height: 500px;
+  background-image: url(http://cdn.playbuzz.com/cdn/dc3a1df9-a3af-4c0c-8982-7550a3328741/42488493-f3f3-4d23-a85f-a25db124f48c.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  margin-left: -30em; }
+
+.elephant {
+  width: 300px;
+  height: 300px;
+  background-image: url(https://media.giphy.com/media/GkYPwDB9akDw4/source.gif);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-top: -30em;
+  position: absolute; }
+
+.regen {
+  width: 500px;
+  height: 500px;
+  background-image: url(http://24.media.tumblr.com/tumblr_mdq76hhR2F1rgpyeqo1_500.gif);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  margin-top: 5em;
+  margin-left: -60em; }
+
+.cloud {
+  width: 500px;
+  height: 500px;
+  background-image: url(http://pngimg.com/upload/cloud_PNG16.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  margin-top: -40em;
+  margin-left: -60em; }
 
 /*# sourceMappingURL=main.css.map */
