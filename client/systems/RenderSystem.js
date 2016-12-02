@@ -41,10 +41,10 @@ export default class RenderSystem {
         this.entities.forEach((currentEntity)=>{
             let x = currentEntity.entity.x,
                 y = currentEntity.entity.y,
-                z = currentEntity.entity.z;
+                z = currentEntity.entity.z,
+                rotation = currentEntity.entity.rotation;
 
-            // todo: refactor: alleen de positie aanpassen. Hoe hij eruit ziet moet naar SASS
-            currentEntity.element.style = ` transform:perspective(500px)translate3d(${x}px,${y}px,${z}px);z-index:${z};`;
+            currentEntity.element.style = ` transform:perspective(500px)translate3d(${x}px,${y}px,${z}px) rotate(${rotation}deg);z-index:${z};`;
         });
     }
     //width:100px;height:100px;background:red;position:absolute;
