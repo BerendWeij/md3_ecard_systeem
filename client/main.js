@@ -8,9 +8,13 @@ import Car from './entities/Car';
 import Tree from './entities/Tree';
 import Mario from './entities/Mario';
 import House from './entities/House';
+
 import Elephant from './entities/Elephant';
 import Regen from './entities/Regen';
 import Cloud from './entities/Cloud';
+
+import Sun from './entities/Sun';
+
 
 export default class Main {
 
@@ -23,14 +27,19 @@ export default class Main {
   setup(){
     this.renderSystem = new RenderSystem();
 
+    let sun = new Sun();
+    this.renderSystem.add(sun);
+
+    let tree = new Tree();
+    this.renderSystem.add(tree);
+
     let house = new House();
     this.renderSystem.add(house);
 
     let car = new Car();
     this.renderSystem.add(car);
 
-    let tree = new Tree();
-    this.renderSystem.add(tree);
+
 
     let mario = new Mario();
     this.renderSystem.add (mario);
