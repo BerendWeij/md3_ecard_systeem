@@ -8,6 +8,8 @@ import Car from './entities/Car';
 import Tree from './entities/Tree';
 import Mario from './entities/Mario';
 import House from './entities/House';
+import Dog from './entities/Dog';
+import Pikachu from './entities/Pikachu';
 
 export default class Main {
 
@@ -32,7 +34,11 @@ export default class Main {
     let mario = new Mario();
     this.renderSystem.add (mario);
 
+    let dog = new Dog();
+    this.renderSystem.add(dog);
 
+    let pikachu = new Pikachu;
+    this.renderSystem.add(pikachu);
   }
 
 }
