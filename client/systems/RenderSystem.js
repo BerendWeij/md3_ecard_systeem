@@ -27,7 +27,9 @@ export default class RenderSystem {
         element = document.createElement("DIV");
         currentName = "entity_" + this._counter;
 
-        element.className = newEntity.id;
+        //element.className = newEntity.id;
+        element.classList.add(newEntity.id);
+        element.classList.add('entity');
         element.id = currentName;
 
         this.entities.push({element: element, entity: newEntity});
