@@ -37,12 +37,17 @@ app.use(function(req, res, next) {
 
 // error handler
 app.use(function(err, req, res, next) {
+<<<<<<< HEAD
   // render the error page
   res.status(500);
 
 
   //res.render('error');
 
+=======
+
+  res.status(500);
+>>>>>>> origin/Backend
 });
 
 module.exports = app;
