@@ -4,7 +4,7 @@
 export default class Entity {
 
     constructor(id = "test", x = 0, y = 0, z = 0, rotation = 0){
-        console.log('new enity');
+        console.log('new entity');
 
         this.id = id;
         this.x = x;

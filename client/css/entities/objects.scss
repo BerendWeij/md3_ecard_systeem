@@ -9,13 +9,14 @@
 .car{
   width: 100px;
   height: 100px;
-  background-color: pink;
+  background-image: url(https://openclipart.org/image/2400px/svg_to_png/228784/Blue-Beetle-Profile.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
   position: absolute;
 }
-.miauw{
+.miauw {
   width: 100px;
   height: 100px;
   background-color: yellow;
-  position: absolute;
-}
+  position: absolute; }
 //width:100px;height:100px;background:red;position:absolute;transform:perspective(500px)

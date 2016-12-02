@@ -7,14 +7,13 @@ document.addEventListener("mousemove", function(event){
 });
 import MovingEntity from './MovingEntity';
 
-export default class Car extends MovingEntity {
+export default class Miauw extends MovingEntity {
 
     constructor(){
         super();
 
         this.id = "miauw";
 
-        this.velocity.x = x;
-        this.velocity.y = y;
+        this.velocity.x = 5;
     }
 }
