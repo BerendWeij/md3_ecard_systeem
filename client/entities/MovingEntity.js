@@ -9,7 +9,7 @@ export default class MovingEntity extends Entity {
 
        setInterval(()=>{
       		this.update();
-    	}, 60);
+    	}, 1000/30);
 
     }
 

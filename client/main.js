@@ -1,6 +1,6 @@
 import RenderSystem from './systems/RenderSystem';
 import Entity from './entities/Entity';
-import Car from './entities/Car';
+import EntityDragger from './editor/EntityDragger';
 
 export default class Main {
 
@@ -13,9 +13,17 @@ export default class Main {
   setup(){
     this.renderSystem = new RenderSystem();
 
+    let entityDragger = new EntityDragger();
 
-    let car = new Car();
-    this.renderSystem.add( car );
+
+    document.addEventListener("keydown", ()=>{
+      let tree = new Entity("tree");
+      this.renderSystem.add( tree );
+      tree.rotation = 30;
+
+      entityDragger.target = tree;
+    });
+
 
   }
 
