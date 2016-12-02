@@ -1,6 +1,6 @@
-import MovingEntity from './MovingEntity';
+import Entity from './Entity';
 
-export default class Tree extends MovingEntity {
+export default class Tree extends Entity {
 
 	constructor(){
         super();

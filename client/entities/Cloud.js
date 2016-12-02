@@ -1,11 +1,11 @@
 import Entity from './Entity';
 
-export default class House extends Entity {
+export default class Cloud extends Entity {
 
 	constructor(){
         super();
 
-        this.id = "house";
+        this.id = "cloud";
 
     }
 }
