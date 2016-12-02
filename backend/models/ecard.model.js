@@ -22,11 +22,11 @@ var  objectSchema = new Schema({
     },
     z: {
         type: Number,
-        requite: true
+        require: true
     },
     rotation: {
         type: Number,
-        requite: true
+        require: true
     },
     scale: {
         type: Number,

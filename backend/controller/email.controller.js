@@ -4,5 +4,5 @@
 var nodemailer = require('nodemailer');
 
 exports.send = function (req,req,next) {
-    // Use Smtp Protocol to send Email
+    console.log('email send');
 };
