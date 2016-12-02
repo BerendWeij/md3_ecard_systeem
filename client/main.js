@@ -9,6 +9,7 @@ import Tree from './entities/Tree';
 import Mario from './entities/Mario';
 import House from './entities/House';
 import Sun from './entities/Sun';
+import Bush from './entities/Bush';
 
 export default class Main {
 
@@ -32,6 +33,9 @@ export default class Main {
 
     let car = new Car();
     this.renderSystem.add(car);
+
+    let bush = new Bush();
+    this.renderSystem.add(bush);
 
 
 
